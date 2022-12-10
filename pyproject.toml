@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "integration-1c-test"
+version = "0.1.0"
+description = ""
+authors = ["Denis Dolgopolov <jlomuk1990@gmail.com>"]
+readme = "README.md"
+packages = [{include = "integration_1c_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.1.4"
+uvicorn = "^0.20.0"
+aiohttp = "^3.8.3"
+whitenoise = {extras = ["brotli"], version = "^6.2.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
